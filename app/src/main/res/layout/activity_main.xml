@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+            <!--app:menu="@menu/activity_drawer_account"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ll_nav_petrol"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/petrol_small"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="Mount Meru Petroleum Ltd." />
+
+                <TextView
+                    android:id="@+id/ll_nav_gas"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/gas_small"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="Mount Meru Gas Ltd." />
+
+                <TextView
+                    android:id="@+id/ll_nav_approve_users"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_exit_to_app"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="Approve Users" />
+
+                <TextView
+                    android:id="@+id/ll_nav_deliver_bookings"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/gas_small"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="Deliver Bookings" />
+
+                <TextView
+                    android:id="@+id/ll_nav_sign_out"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_exit_to_app"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="Sign out" />
+            </LinearLayout>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</android.support.design.widget.CoordinatorLayout>
